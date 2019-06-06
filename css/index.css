@@ -41,7 +41,6 @@ sub,
 sup,
 tt,
 var,
-b,
 u,
 i,
 center,
@@ -180,6 +179,13 @@ body {
   margin: auto;
   width: 80%;
 }
+#A2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed #c0c0c0;
+  margin: auto;
+  width: 80%;
+}
 nav {
   padding-top: 2rem;
   display: flex;
@@ -191,12 +197,15 @@ nav .navbar {
   justify-content: space-between;
   align-items: center;
 }
+nav h2 {
+  flex-grow: 0.4;
+}
 nav .nav-links {
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-grow: 0.3;
+  flex-grow: 0.1;
 }
 @media (max-width: 400px) {
   nav .nav-links {
@@ -207,6 +216,7 @@ nav .nav-links {
 nav .nav-item a {
   text-decoration: none;
   color: black;
+  font-size: 1.3rem;
 }
 @media (max-width: 500px) {
   nav .nav-item a {

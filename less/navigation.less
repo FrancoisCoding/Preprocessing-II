@@ -5,10 +5,13 @@ nav {
     .navbar {
         .flex(space-between, center);
       }
+    h2 {
+        flex-grow: .4;
+    }
     .nav-links {
         list-style: none;
         .flex(space-around, center);
-        flex-grow: .3;
+        flex-grow: .1;
         @media (max-width: 400px) {
         flex-direction: column;
         align-items: center;
@@ -17,6 +20,7 @@ nav {
     .nav-item a {
         text-decoration: none;
         color: black;
+        font-size: 1.3rem;
         @media (max-width: 500px) {
         padding: 5%;
     }
