@@ -1,1 +1,32 @@
 // Navigation Styles here
+nav {
+    padding-top: 2rem;
+    .flex(space-around, center);
+    .navbar {
+        .flex(space-between, center);
+      }
+    .nav-links {
+        list-style: none;
+        .flex(space-around, center);
+        flex-grow: .3;
+        @media (max-width: 400px) {
+        flex-direction: column;
+        align-items: center;
+    }
+      }
+    .nav-item a {
+        text-decoration: none;
+        color: black;
+        @media (max-width: 500px) {
+        padding: 5%;
+    }
+      }
+    .nav-item:hover a {
+        color: @color;
+        font-size: 12px;
+        transition: font-size 0.3s ease;
+    }
+    .nav ul {
+        list-style: none;
+    }
+      }
