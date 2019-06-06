@@ -172,6 +172,14 @@ body {
   margin: auto;
   width: 80%;
 }
+.bus {
+  width: 100%;
+  border-top: 1px dashed #c0c0c0;
+}
+#A1 {
+  margin: auto;
+  width: 80%;
+}
 nav {
   padding-top: 2rem;
   display: flex;
