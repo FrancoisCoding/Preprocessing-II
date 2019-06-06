@@ -4,3 +4,11 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.keys(@name; @arguments) {
+    @keyframes @name { @arguments(); }
+}
+
+.anim(@arguments) {
+    animation: @arguments;
+}

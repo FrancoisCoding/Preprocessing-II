@@ -214,6 +214,21 @@ nav .navbar {
 }
 nav h2 {
   flex-grow: 0.4;
+  animation: fade-in 1s linear infinite alternate;
+}
+@keyframes fade-in {
+  0% {
+    color: #0a66c2;
+    opacity: 0;
+  }
+  50% {
+    color: #0a66c2;
+    opacity: 0.5;
+  }
+  100% {
+    color: #0a66c2;
+    opacity: 1;
+  }
 }
 nav .nav-links {
   list-style: none;

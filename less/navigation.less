@@ -10,6 +10,13 @@ nav {
       }
     h2 {
         flex-grow: .4;
+    .keys(fade-in;{
+		0% { color: @color; opacity: 0; }
+        50% { color: @color; opacity: .5; }
+		100% { color: @color; opacity: 1; }
+		});
+
+	.anim(fade-in 1s linear infinite alternate)
     }
     .nav-links {
         list-style: none;
