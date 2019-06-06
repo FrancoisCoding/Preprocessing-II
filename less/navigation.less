@@ -1,5 +1,8 @@
 // Navigation Styles here
 nav {
+    @media @mobile {
+    flex-direction: column;
+    }
     padding-top: 2rem;
     .flex(space-around, center);
     .navbar {
@@ -21,14 +24,18 @@ nav {
         text-decoration: none;
         color: black;
         font-size: 1.3rem;
-        @media (max-width: 500px) {
-        padding: 5%;
+        @media @mobile {
+        padding-left: 4rem;
+        font-size: 1.6rem;
     }
       }
     .nav-item:hover a {
         color: @color;
         font-size: 12px;
         transition: font-size 0.3s ease;
+        @media @mobile {
+            font-size: 1.7rem;
+    }
     }
     .nav ul {
         list-style: none;
