@@ -1,1 +1,50 @@
 // Navigation Styles here
+nav {
+    @media @mobile {
+    flex-direction: column;
+    }
+    padding-top: 2rem;
+    .flex(space-around, center);
+    .navbar {
+        .flex(space-between, center);
+      }
+    h2 {
+        flex-grow: .4;
+    .keys(fade-in;{
+		0% { color: @color; opacity: 0; }
+        50% { color: @color; opacity: .5; }
+		100% { color: @color; opacity: 1; }
+		});
+
+	.anim(fade-in 1s linear infinite alternate)
+    }
+    .nav-links {
+        list-style: none;
+        .flex(space-around, center);
+        flex-grow: .1;
+        @media (max-width: 400px) {
+        flex-direction: column;
+        align-items: center;
+    }
+      }
+    .nav-item a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        @media @mobile {
+        padding-left: 4rem;
+        font-size: 1.6rem;
+    }
+      }
+    .nav-item:hover a {
+        color: @color;
+        font-size: 12px;
+        transition: font-size 0.3s ease;
+        @media @mobile {
+            font-size: 1.7rem;
+    }
+    }
+    .nav ul {
+        list-style: none;
+    }
+      }
